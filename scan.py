@@ -2,12 +2,12 @@ import sys
 from pathlib import Path
 
 
-Images = list()
-Videos = list()
-Doc = list()
-Music = list()
-archives = list()
-others = list()
+Images = []
+Videos = []
+Doc = []
+Music = []
+archives = []
+others = []
 unknown = set()
 extensions = set()
 

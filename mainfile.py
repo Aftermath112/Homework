@@ -76,11 +76,11 @@ def main(folder_path):
 
     get_folder_objects(folder_path)
 
+def process(path):
+    print(f"Start in {path}")
+    arg = Path(path)
+    scan(arg)
+
 if __name__ == '__main__':
     path = sys.argv[1]
-    print(f"Start in {path}")
-
-    arg = Path(path)
-    # file_generator(arg)
-    print("END")
-    main(arg.resolve())
+    process(path)
