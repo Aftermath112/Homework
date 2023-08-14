@@ -79,8 +79,8 @@ def main(folder_path):
 def process(path):
     print(f"Start in {path}")
     arg = Path(path)
+    path = sys.argv[1]
     scan(arg)
 
 if __name__ == '__main__':
-    path = sys.argv[1]
-    process(path)
+    process(sys.argv[1])
